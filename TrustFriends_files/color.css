@@ -1,0 +1,427 @@
+
+/*******************
+Reversal Color Start
+******************************/
+	#home{
+		background-color: #D5E5E5;
+	}
+	/* Menu Start*/
+	.sf-menu li.active {
+		background-color: #ff9732;		
+	}
+	ul.sf-menu li.currents a {
+		color: #fff;
+	}
+	.sf-menu li.currents {
+		background-color: #09A1EC;		
+	} 
+	.navbar-static-top {		
+		border-color: #09A1EC;		
+	}
+	.sf-menu li a{
+		color: #939598;	
+	}
+	ul.sf-menu li:hover a {		
+		color: #fff;
+	}
+	ul.sf-menu li:hover {			
+		background-color: #09A1EC;	
+	}	
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover{
+		background-color: #09A1EC;			
+	}
+	ul.sf-menu li ul li:hover {		
+		background-color: #353943;
+	}
+	ul.sf-menu li ul li a {
+	color: #353943!important;
+	}
+	ul.sf-menu li ul li:hover a {
+		color: #fff!important;
+	}
+	ul.sf-menu li ul li ul li a {
+		color: #353943 !important;
+	}
+	ul.sf-menu li ul li ul li a:hover {
+		color: #fff !important;
+	}
+	ul#second-sb li a{
+		color: #353943 !important;
+	}
+	ul#second-sb li a:hover{
+		color: #fff !important;
+		background-color: #353943;
+	}
+	.sf-menu li ul li a{
+		border-top: 1px solid #d0d4d6;
+	}
+	
+	/* Menu End*/
+	
+	
+	
+	/* Slider Start*/
+	.tp-caption.large_text1 span{
+			color: #ff9732;
+		}
+	
+	/* Slider End*/
+	
+	
+	
+	/* More-Feathers Start*/	
+	.section-more-feathurs .feathurs-part .feathurs-icon{
+		background-image: url('../../assets/images/six_angel_img1_orange.png');				
+	}
+	.section-more-feathurs .feathurs-part .feathurs-icon:hover{
+		background-image: url('../../assets/images/six_angel_img2_orange.png');
+		
+	}
+	.section-more-feathurs .feathurs-part:hover .feathurs-icon{
+		background-image: url('../../assets/images/six_angel_img2_orange.png');			
+	}
+	.section-more-feathurs .feathurs-part .feathurs-icon a {		
+		color: #ff9732;	
+	}	
+	.section-more-feathurs .feathurs-part .feathurs-icon a:hover {		
+		color: #fff;	
+	}
+	.section-more-feathurs .feathurs-part h3:hover{			
+		color: #ff9732;		
+	}.section-more-feathurs .feathurs-part:hover h3{		
+		color: #ff9732;		
+	}
+	.section-more-feathurs .feathurs-part span.more{
+		background-color: #ff9732;			
+	}
+	.section-more-feathurs .feathurs-part span.more:hover{
+		background-color: #353943;
+		color: #fff;			
+	}
+	.section-more-feathurs .feathurs-part:hover span.more{
+		background-color: #353943;
+		color: #fff;			
+	}
+	.section-more-feathurs .feathurs-part:hover a{
+		
+		color: #fff;			
+	}
+	/* More-Feathers End*/
+	
+	
+	/* Second Header Start*/	
+	.section-second-header .second-header .buy-now span.buy-now-custome {	
+		color: #fff;
+		background-color: #ff9732;		
+	}
+	/* Second Header End*/
+	
+	
+	/* Service Start*/	
+	.mark{
+		background-image: url('../../assets/images/trade_mark1_orange.png');		
+	}
+	.header-title a{		
+		color: #353943;
+	}
+	.service-icon {
+		background-image: url('../../assets/images/service_tab1_orange.png');		
+	}	
+	.service-icon:hover {
+		background-image: url('../../assets/images/service_tab2.png');		
+	}
+	.service-icon:hover .line{
+		background-image: url('../../assets/images/service_tab3.png');		
+	}
+	.rtl .service-icon:hover .line {
+		background-image: url('../../assets/images/service_tab3.png');		
+	}
+	.service-icon a{
+		color: #fff;		
+	}
+	.service-icon a:hover{
+		color: #fff;
+	}
+	/* Service End*/	
+	
+	/* Customers Start*/
+	.section-our-customers .header-title a{
+		color: #fff;
+	}	
+	.customers-line{
+		border-top: 2px solid #ff9732;		
+	}
+	.section-our-customers .carousel-indicators .active {		
+		background-color: #ff9732;
+	}	
+	/* Customers End*/	
+	
+	/* Feathers Work Start*/	
+	a.button.gray,
+	.filter li a.active {
+		background: #ff9732;
+	}	
+	a.button:hover,
+	.filter li a:hover,
+	.forms fieldset .btn-submit:hover,
+	.comment-form .btn-submit:hover,
+	.page-navi ul li a:hover,
+	.page-navi ul li a.current {
+		background: #ff9732;		
+	}
+	.items li a .overlay {   
+		background: #ff9732;	
+	}	
+	/* Feathers Work End*/	
+	
+	/* Client Start*/	
+	#carousel-example-client a.right{
+		background: url(../../assets/images/arrow_right1.png) no-repeat;			
+	}
+	#carousel-example-client a:hover.right{
+		background: url(../../assets/images/arrow_right2.png) no-repeat;				
+	}
+	#carousel-example-client a.left{
+		background: url(../../assets/images/arrow_left1.png) no-repeat;			
+	}	
+	#carousel-example-client a:hover.left{
+		background: url(../../assets/images/arrow_left2.png) no-repeat;			
+	}
+	/* Client End*/	
+	
+	/* Our Team Start*/	
+	.our-team:hover .projectinfo1{
+		background: #ff9732;		
+	}
+	.section-our-team-single .social-icon ul li a:hover{
+		color: #ff9732;		
+	}
+	.section-our-team-single .social-icon ul li:hover{		
+		background-image: url('../../assets/images/six_angel_img7_orange.png');		
+	}
+	/* Our Team End*/	
+	
+	/* Choose Network Start*/	
+	.twitter-icon{		
+		background-color: #353943;		
+	}
+	.twitter-icon a{		
+		color: #7be3ff;
+	}	
+	.twitter-icon a:hover{		
+		color: #7be3ff;
+	}
+	.social-icon ul li:hover a{
+		color: white;
+	}
+	.social-icon ul li a{
+		color: #333333;		
+	}
+	.social-icon ul li a:hover{
+		color: white;		
+	}
+	.section-choose-network{		
+		background-image: url('../../assets/images/bg_img5_orange.png');
+		background-repeat: repeat!important;
+	}
+	/* Choose Network End*/
+	
+	/* Recent Post Start*/
+	.content-image:hover .projectinfo{
+		background: #ff9732;		
+	}
+	.post-date{		
+		background-color: #ff9732;		
+	}
+	.post-comment{		
+		background-color: #353943;
+		color: #fff;		
+	}
+	.content-text h3{		
+		color: #333333;		
+	}
+	/* Recent Post End*/
+	
+	/* Price Start*/
+	.price-table .rate{
+		background-image: url('../../assets/images/six_angel_img3_orange.png');				
+	}	
+	.price-table .rate:hover{
+		background-image: url('../../assets/images/six_angel_img4.png');				
+	}	
+	.price-table .rate:hover .rate-price{
+		color: #fff;	
+	}	
+	.price-table .rate:hover .rate-period{
+		color: #fff;	
+	}	
+	.price-table:hover .rate-period{
+		color: #fff;	
+	}
+	.price-table:hover .rate-price{
+		color: #fff;	
+	}
+	.price-table:hover .rate{
+		background-image: url('../../assets/images/six_angel_img4.png');			
+	}	
+	.price-table:hover .btn-buy-now{		
+		background-color: #353943;		
+		border: 2px solid #c4c4c4;		
+	}
+	.btn-buy-now{		
+		background-color: #ff9732;		
+	}
+	/* Price End*/
+	
+	/* Contact Us Start*/
+	.btn-primary {		
+		background-color: #ff9732;
+		border-color: #ff9732;		
+	}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {		
+		background-color: #e17f1f;
+		border-color: #e17f1f;		
+	}
+	/* Contact Us End*/
+	
+	/* Copy Right Start*/
+	.section-footer-copyright{
+		background-color: #ffffff;		
+	}
+	/* Copy Right End*/
+	
+	/* Portfolio Single Start*/
+	.single-content h2{		
+		color: #333333;		
+	}
+	.tab-one{
+		background-color: #333333;		
+		color: #fff;		
+	}
+	.single-tab{
+		background-color: #ff9732;				
+	}
+	.tab-three{
+		background-color: #333333;
+		color: #fff;		
+	}
+	.single-content h3{
+		color: #333333;		
+	}
+	/* Portfolio Single End*/
+	
+	/* Team Single Start*/
+	.section-our-team-single .our-team .single-second{		 
+		background-color: #ff9732;		
+	}
+	.section-our-team-single .single-details h2{			
+		color: #333333;		
+	}
+	/* Team Single End*/
+	
+	/* Blog Single Start*/
+	.read-more-btn{		
+		background-color: #ff9732;		
+		color: #333333;		
+	}		
+	.blog_pagination a:hover .blog_pagination_left_no { 		
+		background-color: #ff9732;
+	}
+	.active-page{		
+		background-color: #ff9732;
+	}
+	.active-right{		
+		background-color: #ff9732;
+	}	
+	.blog_pagination_right .glyph .fs1:hover {		
+		background-color: #ff9732;		
+	}
+	.panel-default > .panel-heading:hover {		
+		background-color: #ff9732;		
+	}
+	.accordion-sitebar{		
+		background-color: #ff9732;		
+	}	
+	.accordion-sitebar:hover{		
+		background-color: #353943;		
+	}	
+	.accordion-sitebar2{		
+		background-color: #ff9732;		
+	}	
+	.accordion-sitebar3{		
+		background-color: #ff9732;		
+	}	
+	.accordion-sitebar4{		
+		background-color: #ff9732;		
+	}
+	ul.cart_lavel li:hover{		
+		background-color: #ff9732;
+	}	
+	.blog-project h3{		
+		color: #333333;		
+	}	
+	.blg-accordion h3{	
+		color: #333333;		
+	}
+	.blog-project-image:hover .projectinfo2 {		
+		background: #ff9732;		
+	}
+	.tweet-first{		
+		color: #ff9732;		
+	}	
+	.tweet-second{		
+		color: #63e3ff;		
+	}	
+	.tweet-third{		
+		color: #939598;		
+	}
+	#carousel-example-blogsn a:hover.left {
+		background: url(../../assets/images/arrow_left2_orange.png) no-repeat;		
+	}
+	#carousel-example-blogsn a:hover.right {
+		background: url(../../assets/images/arrow_right2_orange.png) no-repeat;		
+	}
+	/* Blog Single End*/
+	
+	/* Blog Details Start*/
+	.blog-detail-text h3{		
+		color: #333333;
+	}
+	.comment_info1{		
+		color: #ff9732;
+	}
+	/* Blog Details End*/
+	
+	/* Img HTML start*/
+	.favicon_icon{
+		background: url(../../assets/images/favicon_orange.png) no-repeat;
+	}
+	.logo_main{
+		background: url(../../assets/fuselab/header_logo.png) no-repeat;		
+	}
+	.logo_3{
+		background: url(../../assets/images/logo3_orange.png) no-repeat;		
+	}	
+	.title_rs{
+		background: url(../../assets/main_slide/slide1/title_orange.png) no-repeat;		
+	}
+	.get_started{
+		background: url(../../assets/main_slide/slide1/button-one_orange.png) no-repeat;		
+	}	
+	.slide3_en{
+		color: #fff;		
+		background-color: #ff9732;		
+	}
+	/* Img HTML end*/
+	#chart-show{
+		color: #ff9732;		
+	}
+	.clr_welcome{
+		color: #ff9732;
+	}
+/*******************
+Reversal Color End
+******************************/

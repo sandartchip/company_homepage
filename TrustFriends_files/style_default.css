@@ -1,0 +1,3664 @@
+/*****************************************************************************/
+/************************Reversal Responsive Page*****************************/
+/*****************************************************************************/
+
+
+/* 
+ * Nanum Gothic (Korean) http://www.google.com/webfonts/earlyaccess
+ */
+
+
+.borderBox { display: table-cell;  vertical-align: middle; }
+.borderBox img { margin:0 auto; display:block; }
+	   
+#vision {
+	background-color : #0489B1;
+	height : 500px;
+	text-align: center;
+}
+#vision h1{
+	margin-bottom:50%;
+	/* 밑쪽에, 전체 높이에서 반만큼의 여백을 둔다*/
+}
+#work{
+	height:700px;
+}
+#history{
+	height:500px;
+	background-color: #D5E5E5;
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot);
+  src: url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.woff) format('woff'),
+       url(//themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+/* firefox fixing start-------------------------------fire-- */
+	@-moz-document url-prefix() { 
+		.social-icon .glyph .fs1{		
+			top: 0px!important;		
+		}
+	}
+	@-moz-document url-prefix() { 
+		.service-icon .glyph .fs1 {   
+		top: 20px!important;
+		left: 6px!important;
+		}
+	}
+	@-moz-document url-prefix() { 
+		.feathurs-icon .glyph .fs1 {   
+		left: 91px!important;
+		top: 21px!important;
+		}
+	}	
+	@-moz-document url-prefix() { 
+		.navbar {		
+		height: 83px!important;
+		}
+	}	
+	@-moz-document url-prefix() { 
+		nav.light {
+		height: 83px!important;
+		
+		}
+	}
+	.clear-mozola{
+		clear: both;
+	}
+
+/* Internet Explorer 10 fixing start-------------------------------IE-- */
+	html[data-useragent*='MSIE 10.0'] .social-icon .glyph .fs1 {		
+		top: 10px!important;		
+	}
+	html[data-useragent*='MSIE 10.0'] .our-network-icon {		
+		margin-left: 37px!important;		
+	}
+	html[data-useragent*='MSIE 10.0'] .section-our-capabilities .mark {
+		background-position: 675px 0px!important;
+	}
+	html[data-useragent*='MSIE 10.0'] .section-our-team .mark {
+		background-position: 683px 2px!important;
+	}	
+	html[data-useragent*='MSIE 10.0'] .section-feathurs-work .mark {
+		background-position: 860px 2px!important;
+	}	
+	html[data-useragent*='MSIE 10.0'] .section-our-customers .mark {
+		background-position: 705px 2px!important;
+	}	
+	html[data-useragent*='MSIE 10.0'] .section-services .mark {
+		background-position: 675px 2px!important;
+	}
+	html[data-useragent*='MSIE 10.0'] .service-text {
+		margin-top:-60px!important;
+	}
+	html[data-useragent*='MSIE 10.0'] .service-icon .glyph .fs1 {		
+		font-size: 24px;
+		position: relative;
+		margin-top: 3px!important;
+		margin-left:15px!important;
+	}	
+	html[data-useragent*='MSIE 10.0'] .feathurs-icon .glyph .fs1 {		
+		left: 91px!important;
+		top: 20px!important;
+	}	
+	html[data-useragent*='MSIE 10.0'] nav.light {
+		height: 83px!important;		
+	}	
+	html[data-useragent*='MSIE 10.0'] .navbar {		
+		height: 83px!important;
+	}
+	
+	/* Safari 5.1.2 fixing start--------------------------------- */
+	@media screen and (-webkit-min-device-pixel-ratio:0){
+	::i-block-chrome, .our-network-icon{
+		padding-left:50px;
+		}
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	
+	
+
+
+
+/*****************************************************************************/
+/***********************Reversal Home Page************************************/
+/*****************************************************************************/
+
+
+/*******************
+Reversal Font Start
+******************************/
+	@font-face {
+		font-family: 'Code';
+		src: url('../fonts/code/CODE Light.otf'); 
+		src: url('../fonts/code/code_bold-webfont.eot'); 
+	}
+	@font-face {
+		font-family: 'Code';
+		src: url('../fonts/code/CODE Bold.otf'); 
+		font-weight: bold;
+	}
+	
+	@font-face {
+		font-family: 'Lato';
+		src: url('../fonts/lato/Lato-Black.ttf'); 	  
+		src: url('../fonts/lato/lato-black-webfont.eot'); 	  
+	}
+	@font-face {
+		font-family: 'Lato';
+		src: url('../fonts/lato/Lato-Bold.ttf'); 
+		font-weight: bold;
+	}	
+	@font-face {
+		font-family: 'Lato';
+		src: url('../fonts/lato/Lato-Italic.ttf'); 
+		font-style: italic;
+	}	
+	@font-face {
+		font-family: 'Lato';
+		src: url('../fonts/lato/Lato-BoldItalic.ttf'); 
+		font-weight: 300;
+	}		
+	@font-face {
+		font-family: 'Lato';
+		src: url('../fonts/lato/Lato-Regular.ttf'); 
+		font-weight: normal;
+	}	
+	@font-face {
+		font-family: 'Lato';
+		src: url('../fonts/lato/Lato-Light.ttf'); 
+		font-weight: 100;
+	}	
+	@font-face {
+		font-family: 'LatoLight';
+		src: url('../fonts/lato/Lato-LightItalic.ttf'); 
+		font-style: italic;
+	}
+/*******************
+Reversal Font End
+******************************/
+@media (min-width:320px) and (max-width:479px) {
+
+
+	header {
+		display: none;
+	}
+
+	.section-more-feathurs .feathurs-part {
+		margin-top:25px;
+	}
+	.welcome-item a{font-size:20px!important;}
+	.welcome-item a:hover{font-size:20px!important;}
+	#carousel-example-welcome .item a{font-size:58px!important;}
+	.carousel-indicators li{display:none!important;}
+	#carousel-example-client a.left {
+		width: 46px;
+		height: 46px;
+		margin-top: -85px!important;
+		margin-left: 80px!important;
+	}
+	#carousel-example-client a.right {
+		width: 46px;
+		height: 46px;
+		margin-top: -85px!important;
+		margin-right: 65px!important;
+	}
+	.services-img img{
+		display:none;
+	}
+		.service-text{
+		float:none!important;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	.service-text h4 {
+		text-align:center!important;
+	}
+	.text10{
+		text-align:center!important;
+	}
+	.line{
+		display:none;
+	}
+	.service-icon {
+		float: none!important;
+		margin:0 auto;
+		display:block;
+		left: 0px!important;
+	}
+	.rtl .service-text {
+		float: none!important;
+		margin: 0 auto;
+	}
+	.our-team{
+		width:80%;
+		margin:0 auto;
+		padding-bottom:20px;
+	}
+	.single-details{text-align:center;}
+	
+	.section-our-team-single .social-icon {left:0!important;}
+	.price1 {
+		width: 70%!important;
+		margin:0 auto;
+	}
+	.blog-post-part .sitebar {
+		width: 20%!important;
+	}
+	.sitebar{
+		float:none!important;
+		margin:0 auto;
+		padding-top:10px;
+	}
+	.content-text{
+		text-align:center!important;
+		float:none!important;
+	}
+	.tab-three{
+		display:none;
+	}
+	.tab-four{
+		display:none;
+	}
+	.content-image img{
+		margin:0 auto;
+	}
+	.price-table .rate {
+
+		background-position:center!important;
+	}
+	
+	.content-text {
+		
+		width: 270px;
+		line-height: 22px;
+		color: #999999;
+		margin: 0 auto!important;
+	}
+	.content-image{position:relative;float:none!important;margin:0 auto;width:210px;}
+	.content-image img{height:210px; width:210px;}
+	
+	.navbar-header{
+		width: 100% !important;
+	}
+
+	
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 23px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		border: 0px solid transparent;
+		border-radius: 4px;
+	}
+	.navbar-default .navbar-toggle {
+		border: 1px solid #ffcc33;
+	}
+	ul.sf-menu {
+		width: 100%;
+		background-color: white;
+		
+	}
+	.light .container > .navbar-collapse {
+		width: 100%;
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #ffcc33;
+	}
+	.navbar-collapse ul li {
+		float: none!important;
+	}
+	ul.sf-menu li {
+		height: 40px!important;
+		line-height: 20px!important;
+	}
+	.light .navbar-collapse ul li {
+		border-top: 1px solid #f0f0f0;
+	}
+	
+	.navbar-collapse{max-height:100%!important;}
+	.clearfix{padding-right:0px!important;padding-left:0px!important;}
+	.sf-menu {
+		float: left;
+		margin-bottom: 1em!important;
+	}
+	.post-date-custom {
+		text-align: center;
+		height: 68px;
+
+		width: 68px!important;
+	}
+	.post-comment-custom {
+		text-align: center;
+		height: 68px;
+		width:68px!important;
+	}
+	.read-more-btn{
+		float:none!important;
+		margin:0 auto;
+	}
+	.blog-details-part .clear_details_320 {
+		clear: both;
+		display: block !important;
+	}
+	.blog-details-part .space1_details_320 {
+		height: 50px;
+		display: block !important;
+	}
+	.section-blog-post .blog-sidebar-custom{
+		width: 79%;
+		margin-left: 11%;
+	}
+	.blog-details-part .admin_right {
+		width: 100%;
+	}
+	.blog-details-part .reply {
+		padding-left: 0px!important;
+	}
+	.projectinfo1 {width:100%!important;height:100%!important;}
+	.our-team-img{position:relative;}
+	.section-our-team-single .our-team h4{font-size:40px!important;}
+	.section-our-team-single .our-team p.text5 {font-size:20px!important;}
+	.single-image{padding-bottom:10px;}
+	.contact1{width:90%;
+		padding-bottom:30px;
+		}
+	.contact2{width:90%;}
+	.blog_pagination_left {
+		float: left;
+		width: 100%!important;
+		padding-bottom: 20px;
+	}	
+	.blog_pagination_left_no {
+
+		margin-right: 0px!important;
+	}
+	.blog-post .content-text-custom{float:left!important;}
+
+	.section-price-table .work-image  img{ width: 100%; }
+}
+
+@media (min-width:480px) and (max-width:639px){
+
+
+	header {
+		display: none;
+	}
+
+	.welcome-item a{font-size:37px!important;}
+	.welcome-item a:hover{font-size:37px!important;}
+	.section-more-feathurs .feathurs-part {
+		margin-top:25px;
+	}
+	#carousel-example-client a.left {
+		width: 46px;
+		height: 46px;
+		margin-top: 26px;
+		margin-left: 0px!important; 
+	}
+	.our-team{
+		width:50%;
+		margin:0 auto;
+		padding-bottom:20px;
+	}
+	.single-details{text-align:center;}
+	.single-pie1{margin:0 auto;}
+	.section-our-team-single .social-icon {left:0!important;}
+	.price1 {
+		width: 56%!important;
+		margin:0 auto;
+	}
+	.mobile-img1{
+		display:none;
+	}
+	.recent-post{
+		width:40%;
+		margin:0 auto;
+	}
+	.blog-post .content-text-custom{float:left!important;}
+	.content-text{
+		float:none!important;
+		text-align:center!important;
+		padding:0px!important;
+		width:auto!important;
+	}
+	.content-image{float:none!important;}
+	.service-text{
+		float:none!important;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	.service-text h4 {
+		text-align:center!important;
+	}
+	.text10{
+		text-align:center!important;
+	}
+	.line{
+		display:none;
+	}
+	.service-icon {
+		float: none!important;
+		margin:0 auto;
+		display:block;
+		left: 0px!important;
+	}
+	.rtl .service-text {
+		float: none!important;
+		margin: 0 auto;
+	}
+	.sitebar{
+		float:none!important;
+		margin:0 auto;
+		padding-top:10px;
+	}
+	.tab-three{left: 20px!important;}
+	.single-image{padding-bottom:15px;}
+	.tab-four {
+		padding: 20px 0px 24px 10px!important;
+		margin-left: 31px;
+	}
+	.single-pie1 {
+		width: 80%!important;
+	}
+	.blog-post-part .sitebar {
+		width: 23%!important;
+	}
+	.content-text {
+		position:relative;
+		
+		line-height: 22px;
+		color: #999999;
+		margin: 0 auto!important;
+	}
+	.content-image{position:relative;width:210px!important;}
+	
+	.navbar-header{
+		width: 100% !important;
+	}
+
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 23px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		border: 0px solid transparent;
+		border-radius: 4px;
+	}
+	.navbar-default .navbar-toggle {
+		border: 1px solid #ffcc33;
+	}
+	ul.sf-menu {
+		width: 100%;
+		background-color: white;
+		
+	}
+	.light .container > .navbar-collapse {
+		width: 100%;
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #ffcc33;
+	}
+	.navbar-collapse ul li {
+		float: none!important;
+	}
+	ul.sf-menu li {
+		height: 40px!important;
+		line-height: 20px!important;
+	}
+	.light .navbar-collapse ul li {
+		border-top: 1px solid #f0f0f0;
+	}
+	
+	.navbar-collapse{max-height:100%!important;}
+	.clearfix{padding-right:0px!important;padding-left:0px!important;}
+	.sf-menu {
+		float: left;
+		margin-bottom: 1em!important;
+	}
+	.post-date-custom {
+		text-align: center;
+		height: 68px;
+
+		width: 68px!important;
+	}
+	.post-comment-custom {
+		text-align: center;
+		height: 68px;
+		width:68px!important;
+	}
+	.read-more-btn{
+		float:none!important;
+		margin:0 auto;
+	}
+	.blog-details-part .clear_details_320 {
+		clear: both;
+		display: block !important;
+	}
+	.blog-details-part .space1_details_320 {
+		height: 50px;
+		display: block !important;
+	}
+	.section-blog-post .blog-sidebar-custom{
+		width: 64%;
+		margin-left: 18%;
+	}
+	.blog-details-part .admin_right {
+		width: 100%;
+	}
+	.blog-details-part .reply {
+		padding-left: 0px!important;
+	}
+	.projectinfo1 {width:100%!important;height:100%!important;}
+	.our-team-img{position:relative;}
+	.contact1{width:80%;
+		padding-bottom:30px;
+		}
+	.contact2{width:80%;}
+		
+	.blog_pagination_left {
+		float: left;
+		width: 100%!important;
+		padding-bottom: 20px;
+	}
+	header {	
+		width: 85%!important;	
+	}
+	#pms {		
+		height: auto;		
+		background: none;
+	}
+	header {
+		position: absolute;
+		top: 94%;
+		left: 39%;
+		z-index: 999;
+		color: #fff;
+		background: rgba(0,0,0,0.5);
+		padding: 0px!important;
+		width: 700px;
+		height: 340px;
+		border-radius: 10px;
+		margin: -200px 0 0 -200px;
+		text-align: center;
+		border: 1px solid rgba(256,256,256,0.6);
+	}
+	.singleimg header {
+		width: 210px!important;
+		left: 240px!important;
+	}
+	.singleimg header {
+		width: 360px!important;
+		left: 250px!important;
+	}
+	.section-more-feathurs {
+		padding-top: 50px;
+		padding-bottom: 30px;
+	}
+	.section-price-table .work-image  img{ width: 100%; }
+}
+		
+
+@media (min-width:640px) and (max-width:767px){
+	.section-more-feathurs .feathurs-part {
+		margin-top:25px;
+	}
+	.welcome-item a{font-size:50px!important;}
+	.welcome-item a:hover{font-size:50px!important;}
+	#carousel-example-client a.left {
+		width: 46px;
+		height: 46px;
+		margin-top: 26px;
+		margin-left: 0px!important; 
+	}
+	.our-team{
+		width:50%;
+		margin:0 auto;
+		padding-bottom:20px;
+	}
+	.section-our-team-single .social-icon {left:0!important;}
+	.price1 {
+		width: 40%!important;
+		margin:0 auto;
+	}
+	.mobile-img1{
+		display:none;
+	}
+	.recent-post{
+		width: 100%;
+		float: left;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.service-text{
+		float:none!important;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	.service-text h4 {
+		text-align:center!important;
+	}
+	.text10{
+		text-align:center!important;
+	}
+	.line{
+		display:none;
+	}
+	.service-icon {
+		float: none!important;
+		margin:0 auto;
+		display:block;
+		left:0px!important;
+	}
+	.rtl .service-text {
+		float: none!important;
+		margin: 0 auto;
+	}
+	.tab-three{left: 20%!important;}
+	.single-image{padding-bottom:15px;}
+	.tab-four {
+		padding: 20px 0px 24px 100px!important;
+		margin-left: 30px;
+	}
+		.single-pie1 {
+	width: 100%!important;
+	}
+	.single-pie1{margin:0 auto; text-align:center;}
+	.section-our-team-single .single-details h2 {
+
+	text-align: center;
+	}
+
+	.navbar-header{
+		width: 100% !important;
+	}
+
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 23px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		border: 0px solid transparent;
+		border-radius: 4px;
+	}
+	.navbar-default .navbar-toggle {
+		border: 1px solid #ffcc33;
+	}
+	ul.sf-menu {
+		width: 100%;
+		background-color: white;
+		
+	}
+	.light .container > .navbar-collapse {
+		width: 100%;
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #ffcc33;
+	}
+	.navbar-collapse ul li {
+		float: none!important;
+	}
+	ul.sf-menu li {
+		height: 40px!important;
+		line-height: 20px!important;
+	}
+	.light .navbar-collapse ul li {
+		border-top: 1px solid #f0f0f0;
+	}
+	
+	.navbar-collapse{max-height:100%!important;}
+	.clearfix{padding-right:0px!important;padding-left:0px!important;}
+	.sf-menu {
+		float: left;
+		margin-bottom: 1em!important;
+	}
+	.post-date-custom {
+		text-align: center;
+		height: 68px;
+
+		width: 68px!important;
+	}
+	.post-comment-custom {
+		text-align: center;
+		height: 68px;
+		width:68px!important;
+	}
+	.read-more-btn{
+		float:none!important;
+		margin:0 auto;
+	}
+	.blog-details-part .clear_details_320 {
+		clear: both;
+		display: block !important;
+	}
+	.blog-details-part .space1_details_320 {
+		height: 50px;
+		display: block !important;
+	}
+	.section-blog-post .blog-sidebar-custom{
+		width: 40%;
+		margin-left: 25%;
+	}
+	.blog-post .content-text-custom {
+		text-align: left;
+		width: 86%!important;
+		padding-right: 0px;
+		margin-left: 25px;
+	}
+	.blog-details-part .admin_right {
+		width: 100%;
+	}
+	.blog-details-part .reply {
+		padding-left: 0px!important;
+	}
+	.projectinfo {
+		height: 100%!important;
+	}
+	.projectinfo1 {width:100%!important;height:100%!important;}
+	.our-team-img{position:relative;}
+
+
+	.section-price-table .work-image  img{ width: 100%; }
+	
+}
+
+@media (min-width:768px) and (max-width:1023px){
+	.welcome-item a{font-size:60px!important;}
+	.welcome-item a:hover{font-size:60px!important;}
+	#carousel-example-client a.left {
+		width: 46px;
+		height: 46px;
+		margin-top: 26px;
+		margin-left: 0px!important; 
+	}
+	.section-more-feathurs .feathurs-part {
+		margin-top:25px;
+	}
+	.our-capabilities{
+		width: 50%!important;
+	}
+	.price1{
+		width: 50%!important;
+	}
+	.price11{
+		width:100%!important;
+	}
+	.price-table .rate {
+
+		background-position:center!important;
+	}
+	.recent-post{
+		width:100%;
+	}
+	
+	.recent-post{
+		width: 80%;
+		float: left;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.mobile-img1{
+		display:none;
+	}
+	.services-img img{
+		display:none;
+	}
+	.service-text{
+		float:none!important;
+		margin:0 auto;
+		margin-bottom:20px;
+	}
+	.service-text h4 {
+		text-align:center!important;
+	}
+	.text10{
+		text-align:center!important;
+	}
+	.line{
+		display:none;
+	}
+	.service-icon {
+		float: none!important;
+		margin:0 auto;
+		display:block;
+	}
+	.rtl .service-text {
+		float: none!important;
+		margin: 0 auto;
+	}
+	.services-1{
+		float:none!important;
+		width:100%;
+		left:0px!important;
+	}
+	.services{
+		float:none!important;
+		width:100%;
+	}
+	.single-image{
+		width:46%;
+		
+	}
+	.tab-four{
+		display:none;
+	}
+	.section-our-team-single .social-icon{left:0!important;}
+	.our-team{margin:0 auto;float:none!important;padding-bottom:20px;}
+	.single-details{float:none!important;margin:0 auto;}
+	.single-pie1 {
+		width: 50%!important;
+	}
+	.section-our-team-single .single-details h2 {
+		text-align:center;
+	}
+	.social-icon{margin:0 auto;
+		text-align:center;
+	}
+	
+	.navbar-header{
+		width: 100% !important;
+	}
+
+	.navbar-toggle {
+		position: relative;
+		float: right;
+		padding: 9px 10px;
+		margin-top: 23px;
+		margin-bottom: 8px;
+		background-color: transparent;
+		border: 0px solid transparent;
+		border-radius: 4px;
+	}
+	.navbar-default .navbar-toggle {
+		border: 1px solid #ffcc33;
+	}
+	ul.sf-menu {
+		width: 100%;
+		background-color: white;
+		
+	}
+	.light .container > .navbar-collapse {
+		width: 100%;
+		margin-right: 0px!important;
+		margin-left: 0px!important;
+		padding-left: 0px!important;
+		padding-right: 0px!important;
+	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border-color: #ffcc33;
+	}
+	.navbar-collapse ul li {
+		float: none!important;
+	}
+	ul.sf-menu li {
+		height: 40px!important;
+		line-height: 20px!important;
+	}
+	.light .navbar-collapse ul li {
+		border-top: 1px solid #f0f0f0;
+	}
+	.clearfix{padding-right:0px!important;padding-left:0px!important;}
+	.navbar-collapse{max-height:100%!important;}
+	.navbar-toggle {
+		display:block;
+	}
+	.sf-menu {
+		float: left;
+		margin-bottom: 1em!important;
+	}
+	.post-date-custom {
+		text-align: center;
+		height: 68px;
+
+		width: 68px!important;
+	}
+	.post-comment-custom {
+		text-align: center;
+		height: 68px;
+		width:68px!important;
+	}
+	.read-more-btn{
+		float:none!important;
+		margin:0 auto;
+	}
+	.blog-details-part .clear_details_320 {
+		clear: both;
+		display: block !important;
+	}
+	.blog-details-part .space1_details_320 {
+		height: 50px;
+		display: block !important;
+	}
+	.section-blog-post .blog-sidebar-custom{
+		width: 40%;
+		margin-left: 25%;
+	}
+	.blog-post .content-text-custom {
+		text-align: left;
+		width: 86%!important;
+		padding-right: 0px;
+		margin-left: 25px;
+	}
+	.content-custom-1 {
+		float: right;
+	}
+	.blog-details-part .admin_right {
+		width: 100%;
+	}
+	.blog-details-part .reply {
+		padding-left: 0px!important;
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+	}
+	.projectinfo1 {width:100%!important;height:100%!important;}
+	.our-team-img{position:relative;}
+	
+	#pms {		
+		height: auto;		
+		background: none;
+	}
+	header {
+		position: absolute;
+		top: 64%;
+	}	
+
+	.section-price-table .work-image  img{ width: 100%; }
+
+}
+.section-our-team-single .container{width:100%!important;}
+@media (min-width:1024px) and (max-width:1200px){
+	.sf-menu li a {			
+			font-size: 10px;	
+			padding-top: 13px;	
+		}
+		.navbar-collapse ul li {
+			display: inline-block;
+		}
+		.projectinfo1 {width:100%!important;height:100%!important;}
+	.our-team-img{position:relative;}
+		.content-image{float:none!important;}
+		#carousel-example-client a.left {
+		width: 46px;
+		height: 46px;
+		margin-top: 26px;
+		margin-left: -30px!important; 
+	}
+	.recent-post{
+		width: 70%;
+		float: none;
+		margin: 0 auto;
+		margin-bottom: 15px;
+	}
+	.price1{
+		width: 50%!important;
+	}
+	.price-table .rate {
+
+		background-position: 160px 0px!important;
+	}
+	.services-img img{
+margin:0 auto;
+
+
+
+	}
+	.line{display:none;}
+	.tab-three {
+		padding: 7px!important;
+		border-radius: 50%;
+		position: relative;
+		top: 23px;
+		left: 40px!important;
+	}
+	.tab-four {
+
+		padding: 20px 10px 24px 48px!important;
+	}
+	.single-pie1 {
+		width: 50%!important;
+	}
+	.projectinfo {
+		position: absolute;
+		width: 33%!important;
+		height: 100%!important;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		margin-left: 52%!important;
+	}
+	.post-date-custom {
+		text-align: center;
+		height: 68px;
+
+		width: 68px!important;
+	}
+	.post-comment-custom {
+		text-align: center;
+		height: 68px;
+		width:68px!important;
+	}
+	.read-more-btn{
+		float:none!important;
+		margin:0 auto;
+	}
+	.blog-details-part .clear_details_320 {
+		clear: both;
+		display: block !important;
+	}
+	.blog-details-part .space1_details_320 {
+		height: 50px;
+		display: block !important;
+	}
+	.section-blog-post .blog-sidebar-custom{
+		width: 40%;
+		margin-left: 25%;
+	}
+	.blog-post .content-text-custom {
+		text-align: left;
+		width: 86%!important;
+		padding-right: 0px;
+		margin-left: 25px;
+	}
+	.content-custom-1 {
+		float: right;
+	}
+	#pms {		
+		height: auto;		
+		background: none;
+	}
+	header {
+		position: absolute;
+		top: 57%;
+	}	
+	.singleimg header {
+		width: 685px!important;
+		left: 366px!important;
+	}
+
+}
+	
+@media (min-width:900px){
+.service-text {
+		margin-bottom:50px;
+	}
+}
+@media (min-width: 1200px){
+	.content-custom-1 {
+		float: right!important;
+	}
+	.pagination-custom-1 {
+		float: right;
+		width: 30%;
+		position: relative;
+		margin-right: -165px;
+		margin-top: -22px;
+	}	
+}	
+
+.tab-part{clear:both;}
+
+
+/*******************
+Reversal Parallax Start
+******************************/
+	.parallax {
+		width: 100%;
+		background-position: 50% 0;
+		background-attachment: fixed!important;
+		
+	}
+	
+/*******************
+Reversal Parallax End
+******************************/
+.section-more-feathurs{
+	margin-top:5%;
+	margin-bottom:8%;
+
+}
+
+
+/*******************
+Reversal Body and Span Start
+******************************/
+
+
+/*******************
+Reversal Welcome Start
+******************************/
+	.section-welcome {
+		background-color: transparent;
+		padding-top: 100px;
+		padding-bottom: 30px;
+	}
+	.welcome-item {
+		margin: 30px 0px 100px;		
+		text-align: center;
+		
+	}	
+	.welcome-item a {
+		font-family: Code;
+		font-weight:bold;
+		font-size: 80px;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 0px;
+		text-align: center;
+		line-height: 1;
+		padding: 5px 25px 0;
+		border: 5px solid black;
+		color: black;
+		text-decoration: none;
+		
+	}
+	.welcome-item a:hover {
+		font-family: Code;
+		font-weight:bold;
+		font-size: 80px;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 0px;
+		text-align: center;
+		line-height: 1;
+		padding: 5px 25px 0;
+		border: 5px solid black;
+		color: #fff;
+		text-decoration: none;
+		background: rgba(0,0,0,0.5);
+	}
+	
+
+/*******************
+Reversal Welcome End
+******************************/
+
+
+
+/*******************
+Reversal Welcome-slide Start
+******************************/
+
+	.section-welcome-slide {
+		background-color: transparent;		
+		padding-bottom: 100px;
+	}	
+
+	.section-welcome-slide .container {
+		width: 100%;
+		background: rgba(0,0,0,0.5);
+		text-align: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}	
+	
+	#carousel-example-welcome .item a{
+		font-family: Code;
+		font-weight:bold;
+		font-size: 80px;
+		text-transform: uppercase;
+		position: relative;
+		margin-bottom: 0px;
+		text-align: center;
+		line-height: 1;
+		padding: 5px 25px 0;		
+		color: #fff;
+		text-decoration: none;
+	}	
+	
+	#carousel-example-welcome .carousel-indicators {
+		position: absolute;
+		bottom: 10px;
+		z-index: 15;
+		width: 30%;
+		padding-left: 80px;
+		text-align: center;
+		list-style: none;
+		top: 200%;
+	}
+
+	nav.light {
+		background: #ffffff;
+		box-shadow: 0px 4px 15px rgba(0,0,0,0.07);
+		
+		transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-webkit-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		
+	}
+	nav {
+		width: 100%;
+		position: relative;
+		z-index: 1000;
+		opacity: 1;
+		filter: alpha(opacity=0);
+	}
+	body.multipage nav {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	.fheight{
+		height:100%;
+		width: 100%;
+	}
+	#pms{
+		position: relative;
+		overflow: hidden;
+		height: 666px;
+		width: 100%;
+		display: table;
+		color: #010101;
+		}
+	.custom-pms-img{
+		background: url(../assets/images/7.jpg) no-repeat;
+	}
+/*******************
+Reversal Welcome-slide End
+******************************/
+
+
+
+
+/*******************
+Reversal menu Start
+******************************/
+	.navbar{
+		
+		width: 100%;		
+	}
+	.navbar-header{
+		width: 223px;
+	}
+	.navbar-collapse ul li{
+		float:left;
+		
+	}
+	.nav > li > a {
+		position: relative;
+		display: block;		
+	}	
+	.navbar {
+		margin-bottom: 0px;
+	
+	}
+	.navbar-default {
+		background-color: #fff;
+	}
+	.navbar-static-top {
+		border-width: 0 0 3px;
+		
+		
+	}
+	.navbar-brand {
+		padding:0px 30px 0px 15px; 
+		
+	}
+	.navbar-default .navbar-nav > li > a, 
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover {
+		color: #939598;		
+		text-transform: uppercase;
+		font-size: 13px;
+		font-family: Lato;
+		font-weight: normal;
+	}
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > li > a:hover, 
+	.navbar-default .navbar-nav > .active > a, 
+	.navbar-default .navbar-nav > .active > a:hover{
+		
+		font-family: Lato;
+		font-weight: normal;
+		font-size: 13px;		
+	}
+	.container > .navbar-header, .container > .navbar-collapse {
+		margin-right: -15px!important;
+		margin-left: -15px!important;
+	}
+/*******************
+Reversal Menu End
+******************************/
+
+
+
+/*******************
+Reversal Feathurs Start
+******************************/	
+	.section-more-feathurs .feathurs-part{
+		text-align: center;
+		margin-top: 25px;
+	}
+
+	.section-more-feathurs .feathurs-part img{
+		width: 100%;
+		max-width: 165px; 
+	}
+
+	p.disc-text{
+		font-family: 'NanumGothic';
+		font-weight: normal;
+		line-height: 20px;
+		font-size: 13px;
+		-webkit-text-stroke-width: 0.1px;
+		-webkit-font-smoothing: subpixel-antialiased;
+
+		width: 100%;
+		text-align: center;
+
+	}
+
+
+
+
+	.section-more-feathurs .feathurs-part .feathurs-icon{		
+		background-repeat: no-repeat;
+		background-position:center;
+		height: 158px;		
+	}
+	.section-more-feathurs .feathurs-part .feathurs-icon:hover{
+		
+		background-repeat: no-repeat;
+		background-position: 70px 0px;
+		height: 158px;			
+	}
+	.section-more-feathurs .feathurs-part .feathurs-icon:hover a {		
+		color: #fff;	
+	}		
+	.section-more-feathurs .feathurs-part .feathurs-icon a {
+		position: relative;
+		width:100%;	
+	}
+	.icon-style{
+		font-size:60px;
+		line-height:150px;
+	}
+	.section-more-feathurs .feathurs-part .feathurs-icon a:hover {
+		position: relative;
+		line-height:150px;		
+	}	
+	.section-more-feathurs .feathurs-part a.link-style1{
+		text-decoration: none;
+		color: #000;
+
+
+
+	}	
+	.section-more-feathurs .feathurs-part a.link-style{
+		text-decoration: none;
+		color: #fff;
+		font-family: Lato;
+		font-size: 13px;
+		font-style: italic;
+	}
+	.section-more-feathurs .feathurs-part span.more{		
+		padding: 15px 9px 15px 9px;
+		border-radius: 50%;		
+	}
+	.section-more-feathurs .feathurs-part span.more:hover{		
+		padding: 15px 9px 15px 9px;
+		border-radius: 50%;		
+	}	
+	.section-more-feathurs .feathurs-part h3{
+		text-transform: uppercase;		
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-family: Code;
+		font-weight: bold;
+	}
+	.section-more-feathurs .feathurs-part h3:hover{
+		text-transform: uppercase;			
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-family: Code;
+		font-weight: bold;
+	}
+	.section-more-feathurs .feathurs-part p{
+		color: #939598;
+		margin-bottom: 40px;
+	}
+	.section-more-feathurs .feathurs-part:hover .feathurs-icon{		
+		background-repeat: no-repeat;
+		background-position:center;
+		height: 158px;		
+	}	
+	.section-more-feathurs .feathurs-part:hover a {		
+		color: #fff;	
+	}	
+	.section-more-feathurs .feathurs-part:hover h3{
+		text-transform: uppercase;			
+		margin-bottom: 20px;
+		margin-top: 20px;
+		font-family: Code;
+		font-weight: bold;
+	}	
+	.section-more-feathurs .feathurs-part:hover span.more{		
+		padding: 15px 9px 15px 9px;
+		border-radius: 50%;		
+	}
+
+	.feathurs-icon .glyph .fs1 {
+		font-size: 60px;
+		
+	}
+
+/*******************
+Reversal Feathurs End
+******************************/
+
+
+/*******************
+Reversal Second Header Start
+******************************/
+	.section-second-header {
+		background: url(../assets/fuselab/cu_bg.png) no-repeat;	
+		background-position: right top;
+		background-color: #Fff;		
+		padding-bottom: 150px;
+		
+	}	
+	.section-second-header .second-logo {
+		text-align: center;		
+	}
+	.section-second-header .second-header {
+		text-align: center;
+		padding-top: 135px;
+	}
+	.section-second-header .second-header h1 {
+		font-family: 'Nanum Gothic', sans-serif;
+		font-weight:Bold;
+		color: #000;		
+	}
+	.section-second-header .second-header p {
+		font-family: 'Nanum Gothic', sans-serif;
+		color: #fff;		
+	}	
+/*******************
+Reversal Second Header End
+******************************/
+
+
+/*******************
+Reversal Service Start
+******************************/	
+	.section-services {
+		padding-top: 100px;
+		padding-bottom: 130px;
+
+		background: url(../assets/fuselab/history_bg.png) no-repeat;	
+		background-position: left bottom;
+	}
+
+	.section-services .header-title{
+		margin-bottom: 50px;
+	}
+	.services-title{
+		margin-bottom: 45px;
+	}
+
+
+
+	.rtl .service-text {
+		float: right;
+	}
+	.section-service{	
+		margin-top: 100px;
+	}	
+	.service-text{
+		float: left;
+		width: 280px;
+	}	
+	.rtl .service-text{		
+		width: 280px;		
+	}
+	.rtl .service-icon{
+			float: left;		
+			left: -20px;
+		}
+		.rtl .service-icon:hover .line {		
+			left: -80px;
+		}
+	.revicon{
+		
+		position: relative!important;
+		top: -14px!important;
+		left: -2px!important;
+	}	
+	.service-text h4{
+		font-family: Code;		
+		font-weight: bold;
+		font-size: 16px;
+		text-align:right;
+	}	
+	.rtl .service-text h4{
+		font-family: Code;
+		text-align: left;
+	}
+	.text10{
+		color: #939598;
+		font-family: Lato;		
+		font-size: 13px;
+		margin-top: 15px;
+		line-height: 20px;
+		font-weight: normal;
+		text-align:right;
+		-webkit-text-stroke-width: 0.1px;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}	
+	.rtl .text10{
+		color: #939598;	
+		font-family: Lato;
+		text-align: left;		
+		font-size: 13px;
+		margin-top: 15px;
+		line-height: 20px;
+		font-weight: normal;
+	}
+	.service-icon{
+		float: right;
+		text-align: center;
+	}	
+	.rtl .service-icon{		
+		text-align: center;
+		position: relative;		
+	}
+	.service-icon a{
+		
+		position: relative;
+		top: 22px;
+		left: 8px;
+	}	
+	.service-icon {		
+		background-repeat: no-repeat;
+		background-position: 25px 9px;
+		height: 63px;
+		width: 80px;
+	}	
+	.service-icon:hover {		
+		background-repeat: no-repeat;
+		background-position: 25px 9px;
+		height: 63px;
+		width: 80px;
+		cursor: pointer;
+	}
+	.service-icon:hover .line{		
+		background-repeat: no-repeat;
+		background-position: 25px 9px;
+		height: 63px;
+		width: 90px;
+		position: relative;
+		top: 26px;
+		left: 49px;
+	}
+	.rtl .service-icon:hover .line {		
+		background-repeat: no-repeat;
+		background-position: 25px 9px;
+		height: 63px;
+		width: 105px;
+		position: relative;
+		top: 26px;		
+	}
+	.services-img{
+		text-align: center;
+	}
+	.services-img img{
+		margin:0 auto;
+	}
+	.service-icon .glyph .fs1{
+		font-size: 24px;
+		position: relative;
+		margin-top: -18px;
+	}
+	.rtl .service-icon .glyph .fs1{
+		font-size: 24px;
+		position: relative;
+		margin-top: -18px;
+	}
+/*******************
+Reversal Service End
+******************************/
+
+
+
+/*******************
+Reversal Our customers Start
+******************************/
+	.section-our-customers{
+		padding-top: 130px;		
+		background-image: url('../assets/images/bg_img6.png');
+		background-repeat: no-repeat;		
+	}
+	.section-our-customers .item{
+		text-align: center;
+		color: white;
+	}	
+	.carousel-indicators li {
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		margin: 1px;
+		margin-right: 5px;
+		text-indent: -999px;
+		cursor: pointer;
+		background-color: #000 \9;
+		background-color: white;
+		border: 1px solid #ffffff;
+		border-radius: 10px;
+		float: right;
+	}
+	.carousel-indicators li.active {		
+		margin-right: 5px;		
+	}
+	.carousel-indicators {
+		position: absolute;
+		bottom: 10px;		
+		z-index: 15;
+		width: 32%;
+		padding-left: 0;		
+		text-align: center;
+		list-style: none;
+	}			
+	.section-our-customers .header-title h1{
+		margin-bottom: 55px;
+	}		
+	.section-our-customers p.text5{
+		color: white;
+		font-size: 22px;
+		font-family: LatoLight;
+		font-style: italic;
+		margin-top: 0px;
+		line-height: 30px;
+		background-color: #666666;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}	
+	.customers-line{		
+		width: 75%;
+	}
+	
+	.customers-part{
+		padding-top: 50px;
+		text-align: center;
+		color: #fff;
+	}
+	.customers-image img{		
+		border-radius: 50%;
+	}	
+	.customers-image {		
+		background-image: url('../assets/images/circle_dotted1.png');
+		background-repeat: no-repeat;
+		background-position: 16px 0px;
+		height: 120px;
+		width: 150px;
+		margin: 0 auto;
+		padding-top: 4px;	
+		margin-top: 45px;	
+	}	
+	.section-our-customers h3 {		
+		font-family: Lato;
+		font-weight: normal;
+		font-size: 22px;
+	}	
+	.section-our-customers .item .customers-txt {		
+		margin-bottom: 130px;			
+	}
+	.section-our-customers .item h5 {		
+		font-style: italic;
+		font-family: LatoLight;
+		font-size: 16px;		
+	}
+		
+	.section-our-customers .arrow-img {		
+		background-image: url('../assets/images/customer_img2.png');
+		background-repeat: no-repeat;
+		background-position:center;
+		height: 10px;
+		position: relative;
+		top: -10px;
+	}	
+	.custo #owl-demo .item{
+		background-color: red;
+	}	
+/*******************
+Reversal Our customers End
+******************************/
+
+	.section-features {
+
+		background: url('../assets/fuselab/feature_bg.png') no-repeat;	
+		background-position: right top;
+		background-color: #000;		
+
+		padding-top: 150px;
+		padding-bottom: 150px;
+
+	}
+
+	.section-features .header-title h1 {
+		color: #fff;
+
+	}
+
+	.section-features .header-title .text5 {
+		color: #aaa;
+
+	}
+
+	.section-features .features-part{
+		text-align: center;
+		margin-top: 25px;
+	}
+
+	.section-features .features-part .desc{
+		margin-top: 25px;
+		font-family: 'Nanum Gothic', serif;
+		font-size: 15px;
+		text-align: center;
+		width:230px;
+		color: #fff;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+/*******************
+Reversal Feathurs-Single Start
+******************************/
+	
+	.section-feathurs-work-single{
+		padding-top:80px;
+		padding-bottom:80px;		
+	}	
+	.space1{
+		height: 20px;
+	}
+	.single-image span img{
+		margin-right: 10px;
+	}
+	.single-content h2{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 24px;
+		text-transform: uppercase;		
+		margin-top: 0px;
+	}
+	.single-tab{		
+		height: 60px;
+		width: 100%;		
+	}	
+	.tab-one{		
+		padding: 22px 14px 22px 18px;
+		border-radius: 5px;		
+		position: relative;
+		top: 23px;
+		left: 13px;
+		background-image: url('../assets/images/heart.png');
+		background-repeat: no-repeat;
+		background-position: 42% 25%;
+	}
+	.tab-one-content{
+		position: relative;
+		top: 10px;
+	}	
+	.tab-two{
+		position: relative;
+		left: 20px;
+		top: 23px;
+		color: #fff;
+	}	
+	.tab-three{		
+		padding: 10px;
+		border-radius: 50%;
+		position: relative;
+		top: 23px;
+		left: 60px;
+	}	
+	.tab-four{
+		color: #fff;
+		position: relative;
+		
+		top: 21px;
+		border-left: 1px solid #333333;
+		padding: 20px 10px 24px 70px;
+	}
+	.single-content h3{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;		
+		text-transform: uppercase;
+	}
+	p.single-text10{
+		font-family: Lato;
+		color: #999999;
+		font-style: normal;
+		line-height: 20px;
+		font-size: 13px;
+	}
+	.author-info{
+		padding-bottom: 23px;
+	}
+	.author-title{
+		font-family: Lato;
+		font-weight: bold;
+		font-size: 13px;
+		width: 150px;		
+		color: #333333;
+		float: left;
+		width: 100px;
+	}
+	.author-descrip{
+		font-family: Lato;
+		font-style: normal;
+		font-size: 13px;
+		color: #666666;
+		
+		text-align: left;
+		width: 100%;
+	}
+/*******************
+Reversal Feathurs-Single End
+******************************/	
+	
+	
+/*******************
+Reversal Feathurs Work Start
+******************************/
+	.section-feathurs-work .container{
+		width:100%;
+		padding: 0px;
+	}		
+	.section-feathurs-work .row{
+		width:100%;
+	}
+	.section-feathurs-work{				
+		margin-bottom: 0px;
+	}
+	.section-feathurs-work .row{		
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.section-feathurs-work {
+	padding-top: 165px;
+	}
+/*******************
+Reversal Feathurs Work End
+******************************/
+
+
+/*******************
+Reversal Our Client Start
+******************************/
+	
+	.section-our-client{
+		background-image: url('../assets/images/bg_img7.png');
+		background-repeat: no-repeat;		
+	}	
+	.section-our-client .carousel-indicators{		
+		position: absolute;
+		bottom: 10px;
+		left: 934px;
+		top: 225px;
+		z-index: 15;
+		width: 30%;
+		padding-left: 0;
+		margin-left: -30%;
+		text-align: center;
+		list-style: none;
+		display: none;	
+	}		
+	.section-our-client .our-client .owl-next{
+		background-image: url('../assets/images/arrow_right.png');
+		background-repeat: no-repeat;		
+	}	
+	.section-our-client .our-client .owl-prev{
+		background-image: url('../assets/images/arrow_left.png');
+		background-repeat: no-repeat;		
+	}
+	.our-client{
+		margin-top: 210px;
+		margin-bottom: 210px;
+	}
+	.our-client img{
+		border: 2px solid transparent;
+		padding: 20px 40px 20px 40px;
+		height: 80px;
+		width: 250px;
+	}	
+	.our-client img:hover{
+		border: 2px solid #fff;
+		padding: 20px 40px 20px 40px;
+		height: 80px;
+		width: 250px;
+	}
+	.item ul li{
+		float: left;
+		display: inline-block;
+	}		
+	.carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+		right: 50%;
+		top: 9px;
+		left: 6px;
+	}
+	.carousel-control .icon-prev, .carousel-control .glyphicon-chevron-left {
+		left: 50%;
+		top: 9px;
+		left: 8px;
+	}
+	#carousel-example-client a.right{
+		
+		width: 46px;
+		height: 46px;
+		margin-top: 26px;
+	}
+	#carousel-example-client a:hover.right{
+		
+		width: 46px;
+		height: 46px;		
+	}
+	#carousel-example-client a.left{
+		
+		width: 46px;
+		height: 46px;
+		margin-top: 26px;
+		margin-left: -75px;
+	}	
+	#carousel-example-client a:hover.left{
+		
+		width: 46px;
+		height: 46px;		
+	}
+/*******************
+Reversal Our Client End
+******************************/
+
+
+
+/*******************
+Reversal Our Team Start
+******************************/	
+	.section-our-team {
+	padding-top: 150px;
+	}
+	.section-our-team .text5{
+		margin-top: 0px;	
+	}
+	.section-our-team h4 {
+		font-family: Code;
+		font-weight: bold;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}	
+	.our-team{
+		text-align: center;
+	}	
+	.our-team img{
+		width: 100%;
+		height: auto;
+	}
+	.section-our-team .our-team{
+		margin-top: 60px;
+		padding-left: 0px;
+		padding-right: 0px;
+		border-left: 1px solid #ebebeb;
+		border-bottom: 1px solid #ebebeb;
+		border-top: 1px solid #ebebeb;
+	}	
+	.section-our-team .bdr{		
+		border-right: 1px solid #ebebeb;
+	}
+	.our-team:hover .projectinfo1{
+		
+		opacity: 0.8;
+		-webkit-transition: background .33s linear;
+		-moz-transition: background .15s linear;
+		-o-transition: background .15s linear;
+		transition: background .15s linear;
+		cursor: url('../assets/images/more.cur'), crosshair;
+		cursor: url('../assets/images/more.png') 40 40, crosshair;
+	}
+	.projectinfo1{
+		position: absolute;
+		width: 100%;
+		
+		top: 0;
+		left: 0px;
+		z-index: 100;
+	}
+/*******************
+Reversal Our Team End
+******************************/
+
+
+/*******************
+Reversal Our Team Single Start
+******************************/
+	.modal-dialog{
+		width: 100%;
+	}
+
+	button.close{
+		position: relative;
+		top: 8px;
+		right: 8px;
+	}
+	.section-our-team-single {
+		padding-top: 80px;		
+	}			
+	.section-our-team-single .our-team h4{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 48px;
+		color: #333333;		
+	}	
+	.section-our-team-single .our-team p.text5{		 
+		color: #fff;
+		font-size: 30px;
+		font-family: Lato;
+		margin-top: 15px;
+		line-height: 20px;
+		font-weight: normal;
+	}	
+	.section-our-team-single .our-team .single-second{			
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.section-our-team-single .single-details h2{		 
+		font-family: Code;
+		font-weight: bold;
+		text-transform: uppercase;		
+		font-size: 24px;
+		margin-top: 0px;
+	}	
+	.blank1{
+		height:30px;
+	}	
+	.section-our-team-single .single-details p.single1{		 
+		font-family: Lato;
+		font-weight: bold;
+		font-size: 15px;
+		color: #666666;
+		line-height: 20px;
+	}	
+	.section-our-team-single .single-details p.single2{		 
+		font-family: Lato;
+		font-style: normal;
+		font-size: 13px;
+		color: #999999;
+		line-height: 20px;
+	}
+	
+	.section-our-team-single .social-icon ul li:hover{
+		display: inline-block;
+		float: left;
+		width: 100px;
+		
+		background-repeat: no-repeat;
+		background-position: 11px 0px;
+		height: 90px;
+	}
+	.section-our-team-single .social-icon {
+		text-align: center;
+		
+		margin: 0 auto;
+		margin-top: 45px;
+		position: relative;
+		left: -85px;
+		top: -25px;
+	}		
+	.section-our-team-single .second-part{
+		position: relative;
+		top: -90px;
+	}	
+	
+	.single-pie1{
+		width:25%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.single-pie1 h4{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		color: #333333;
+		text-align: center;
+		margin-top: -70px;
+		margin-bottom: 30px;
+	}
+	
+	.chart1 {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 130px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.chart1 canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+	.percent1 { 
+		text-align:center; 
+		font-size:20px; 
+		position:relative; 
+		line-height: 150px;
+		color:#dadada;
+	}
+	.percent1:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: 20px;
+}
+/*******************
+Reversal Our Team Single End
+******************************/
+
+
+
+/*******************
+Reversal Our Capabilities Start
+******************************/	
+	.section-our-capabilities {
+		padding-top: 135px;
+		padding-bottom: 150px;
+	}
+	.section-our-capabilities h1{
+		font-size: 24px;		
+	}	
+	.our-capabilities{
+		text-align: center;
+	}
+	.our-capabilities h4{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+	}
+	p.text5-capabiliti{
+		color: #353943;
+		font-size: 15px;
+		font-family: Lato;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		line-height: 20px;
+		font-weight: bold;
+	}
+	/*progress bar*/
+	.chart {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 185px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+	.percent { 
+		text-align:center; 
+		font-size:49px; 
+		position:relative; 
+		line-height: 200px;
+		color:#dadada;
+	}
+	.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: 49px;
+}
+	
+	/*progress bar*/
+	
+/*******************
+Reversal Our Capabilities End
+******************************/
+
+
+/*******************
+Reversal Choose Network Start
+******************************/
+	.section-choose-network{		
+		padding-bottom: 150px;		
+		background-repeat: no-repeat;
+		text-align: center;
+		height: auto;
+	}
+	.network-system{margin-top:10%;}
+	.icon-bg{
+		background-image: url('../assets/images/circle_dotted.png');
+		background-repeat: no-repeat;		
+		height: 111px;
+		margin-bottom: 60px;
+		background-position: 50%;
+	}
+	.text11{
+		font-size: 20px;
+		margin: 0 auto;
+		font-family: Lato;
+		font-style: italic;
+		margin-bottom: 10px;
+		color: #333333;
+	}	
+	.text12{
+		font-size: 24px;
+		margin: 0 auto;
+		font-family: Lato;
+		font-style: italic;
+		color: #333333;
+	}
+	.twitter-icon{
+		width: 80px;
+		height: 80px;
+		
+		border-radius: 50%;
+		margin: 0 auto;
+		position: relative;
+		top: 15px;
+		padding-top: 25px;
+		padding-left: 5px;
+	}
+	.twitter-icon a{
+		font-size: 30px;		
+	}	
+	.twitter-icon a:hover{
+		font-size: 30px;		
+	}
+	.chose-network{
+		text-align: center;
+		color:black;
+	}
+	.chose-network h2{
+		margin-top: 70px;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-family: Code;
+		font-weight: bold;
+	}
+	.choose-button{
+		border: 1px solid #333333;
+		padding: 10px;
+		color: #333333;
+		font-family: Lato;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 16px;
+	}
+	.space-btn{
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	.social-icon ul li{
+		display: inline-block;
+		float: left;
+		width: 100px;
+		background-image: url('../assets/images/six_angel_img5.png');
+		background-repeat: no-repeat;
+		background-position:center;
+		height: 90px;
+	}
+	.social-icon ul li:hover{
+		display: inline-block;
+		float: left;
+		width: 100px;
+		background-image: url('../assets/images/six_angel_img6.png');
+		background-repeat: no-repeat;
+		background-position: 11px 0px;
+		height: 90px;
+		cursor:pointer;
+	}	
+	
+	.social-icon{
+		text-align: center;
+		width: 600px;
+		max-width: 100%;
+		margin: 0 auto;
+		margin-top: 45px;
+	}
+	.our-network-icon {
+		font-size: 24px;
+		margin-top: 29px!important;
+		position: absolute;
+		margin-left: -14px!important;
+	}
+	.our-network-icon:hover {
+		color:white;
+		cursor:pointer;
+	}
+	.section-choose-network:hover .projectinfo2{
+		background: #ffd737;
+		opacity: 0.8;
+		-webkit-transition: background .33s linear;
+		-moz-transition: background .15s linear;
+		-o-transition: background .15s linear;
+		transition: background .15s linear;
+	}
+	.projectinfo2 {
+		position: absolute;
+		width: 115%;
+		height: 171%;
+		top: -70px;
+		left: -91px;
+		z-index: 100;
+	}
+	.section-choose-network h2{
+		color: #333333;
+	}	
+	.section-choose-network .carousel-indicators{
+		display:none;
+	}
+	#carousel-example-social a.right{
+		background: url(../assets/images/arrow_right1.png) no-repeat;
+		width: 46px;
+		height: 46px;	
+		margin-top: 15%;
+	}
+	#carousel-example-social a.left{
+		background: url(../assets/images/arrow_left1.png) no-repeat;
+		width: 46px;
+		height: 46px;
+		margin-top: 15%;
+	}
+	.twitter-icon .glyph .fs1{
+		font-size: 26px;
+		position: relative;
+		margin-top: -37px;
+		margin-left: -105px;
+	}
+	.social-icon .glyph .fs1{
+		font-size: 24px;
+		position: relative;
+		margin-top: -35px;
+		margin-right: 80px;
+	}	
+	
+/*******************
+Reversal Choose Network End
+******************************/
+
+
+/*******************
+Reversal Recent Post Start
+******************************/	
+	.section-recent-post {
+		padding-top: 180px;
+		padding-bottom: 100px;
+	}
+	.section-recent-post .text5{
+		margin-bottom: 45px;
+	}
+	.content-text h3{
+		font-family: Code;
+		font-size: 18px;
+		text-transform: uppercase;
+		
+		font-weight: bold;
+	}
+	.sitebar{
+		float: left;
+	}
+	.post-date{
+		text-align: center;		
+		height: 68px;
+		padding-top: 1px;
+	}
+	.date{
+		font-size: 30px;
+	}
+	.post-comment{
+		text-align: center;
+		
+		height: 68px;
+	}
+	.comment{
+		position: relative;
+		top: 26px;
+		border: 2px solid #fff;
+		padding: 10px;
+		border-radius: 50%;
+	}		
+	.content-text{
+		float: left;
+		width: 270px;			
+		line-height: 22px;
+		color: #999999;
+	}
+	.content-text {
+		text-align: right;
+		padding-right: 25px;
+	}
+	
+	
+	.content-image:hover .projectinfo{
+		
+		opacity: 0.8;
+		-webkit-transition: background .33s linear;
+		-moz-transition: background .15s linear;
+		-o-transition: background .15s linear;
+		transition: background .15s linear;
+		cursor: url('../assets/images/more.cur'), crosshair;
+		cursor: url('../assets/images/more.png') 40 40, crosshair;
+	}
+	.content-text{position: relative;}
+	.content-image{position: relative;
+float: left;}
+	.projectinfo{
+		position: absolute;
+		width: 100%;
+		height:100%;
+		top: 0;	
+		left:0;
+		z-index: 100;
+		
+	}	
+	.blog-row{
+		margin-top: 30px;
+	}
+	.sitebar{
+		width: 70px;
+	}
+	.sitebar img{
+		height: 68px;
+		width: 70px;
+	}
+	p.text6{
+		color: #939598;
+		font-size: 13px;
+		font-family: Lato;		
+		line-height: 20px;
+		font-weight: normal;
+		-webkit-text-stroke-width: 0.1px;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	.post-comment .glyph .fs1{
+		font-size: 30px;
+		position: relative;
+		top: 1px;
+		left: -8px;
+	}
+	
+/*******************
+Reversal Recent Post End
+******************************/
+.section-services .mark{
+			background-position: 676px 2px;
+		}
+.section-our-customers .mark {
+background-position: 702px 2px;
+}
+.section-feathurs-work .mark {
+background-position: 860px 2px;
+}
+.section-our-team .mark {
+background-position: 680px 2px;
+}
+.section-our-capabilities .mark {
+background-position: 675px 2px;
+}
+.section-recent-post .mark {
+background-position: 720px 2px;
+}
+.section-price-table .mark {
+background-position: 650px 2px;
+}		
+.section-second-header .mark{background-position:632px 2px;}
+
+.section-services .history-image {
+	text-align: center;
+}
+
+/*******************
+Reversal Price Table Start
+******************************/	
+	.mark{		
+		background-repeat: no-repeat;		
+		height: 30px;
+		margin-bottom: -35px;
+	}
+	.section-price-table {
+		padding-top: 130px;
+		padding-bottom: 420px;
+	}
+
+	.section-price-table .header-title {
+		margin-bottom: 60px;
+		text-align: center;
+	}
+
+	.section-price-table .work-image {
+		position: absolute;
+	}
+
+	.section-price-table .work-image1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.section-price-table .work-image2 {
+		text-align: center;
+	}
+
+	.section-price-table .work-image3 {
+		position: absolute;
+	}
+
+	.section-price-table .work-image4 {
+		position: absolute;
+		left:720px;
+		top:-60px;
+
+	}
+
+	.section-price-table-bg {
+		height: 520px;
+		background-color: #F9A719;
+	}
+
+	.header-title h1{		
+
+		font-weight: 800;
+		font-size: 38px;
+		font-family: 'Nanum Gothic', serif;
+	}
+
+	
+	.header-title .text5 {
+		font-weight: bold;
+		font-size: 18px;
+		font-family: 'Nanum Gothic', serif;
+		text-align:center;
+	}
+
+	.section-price-table {
+		background-color: #f4f4f4;		
+	}
+	.price-table{
+		background-color: #fff;
+		border: 1px solid #939598;
+		text-align: center;
+		margin-top: 130px;
+		border: 1px solid transparent;
+	}	
+	.price-table:hover{
+		background-color: #fff;
+		border: 1px solid #939598;
+		text-align: center;
+		margin-top: 130px;				
+		box-shadow: 0px 1px 12px rgba(0,0,0,0.3);
+		border: 1px solid transparent;
+	}
+	.price-table h3{
+		margin-top: -20px;
+		font-family: Code;
+		font-weight: bold;
+		font-size: 30px;
+		text-transform: uppercase;
+		color: #333333;
+	}
+	.rate{		
+		margin: 0 auto;
+		margin-top: -30px;
+	}		
+	.tbl-border{
+		border-top: 1px solid #e9e9e9;
+		padding-top: 12px;
+		margin-bottom: -8px;
+	}
+	.header-title{
+		text-align: center;
+	}
+	.header-title a{
+		text-decoration: none;
+		
+	}
+	p.text5{
+		color: #939598;
+		font-size: 13px;
+		font-family: Lato;
+		margin-top: 15px;
+		line-height: 20px;
+		font-weight: normal;
+		-webkit-text-stroke-width: 0.1px;
+		-webkit-font-smoothing: subpixel-antialiased;
+	}
+	.btn-buy-now{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		
+		border-radius: 50%;
+		border: 2px solid #ffcc00;
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+	.btn-buy-now:hover{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		background-color: #353943;
+		border-radius: 50%;
+		border: 2px solid #c4c4c4;
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}
+	.buy-now-text{
+		color: #fff;
+		position: relative;
+		top: 41px;
+		left: 0px;
+		font-family: Lato;
+		font-weight: normal;
+		font-size: 13px;		
+	}
+	.price-number{
+		color: #333333;
+		font-weight: bold;
+		padding-right: 10px;
+		font-size: 16px;
+		font-family: Lato;
+		font-style: italic;
+	}
+	.price-item{
+		color: #939598;
+		font-family: Lato;
+		font-weight: normal;
+		font-size: 13px;
+	}
+	.rate-price{
+		font-size: 48px;
+		position: relative;
+		top: 42px;
+		left: -3px;
+		font-family: Code;
+		font-weight: bold;
+		color: #333333;
+	}	
+	.rate-period{
+		position: relative;
+		top: 43px;
+		left: -4px;
+		font-family: Lato;
+		font-size: 13px;
+		font-weight: normal;
+		color: #333333;
+	}
+	.price-table .rate{
+		
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 140px;	
+		position: relative;
+		top: -42px;		
+	}	
+	.price-table .rate:hover{
+		
+		background-repeat: no-repeat;
+		background-position: 66px 0px;
+		height: 140px;	
+		position: relative;
+		top: -42px;		
+	}		
+	.price-table:hover .rate{		
+		background-repeat: no-repeat;
+		background-position:center;
+		height: 140px;	
+		position: relative;
+		top: -42px;		
+	}	
+	.price-table:hover .btn-buy-now{
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;		
+		border-radius: 50%;		
+		margin-top: 35px;
+		margin-bottom: 20px;
+	}	
+/*******************
+Reversal Price Table End
+******************************/
+
+
+/*******************
+Reversal Bottom-Header Start
+******************************/
+	.section-bottom-header {
+		background-image: url('../assets/images/bg_img7.png');	
+		background-repeat: no-repeat;			
+		padding-top: 120px;
+		padding-bottom: 120px;		
+	}
+	.second-header{
+		text-align: center;
+		color: #fff;
+		font-family: Myriad Pro;
+	}
+	p.disc-text3{
+		font-size: 24px;
+		margin: 0 auto;
+		font-family: Lato;
+		margin-top: 30px;
+		font-style: italic;
+	}
+	p.disc-text4{
+		font-size: 24px;
+		border: 1px solid #fff;
+		width: 230px;
+		margin: 0 auto;
+		padding: 15px 20px 15px 20px;
+		font-family: Lato;
+		margin-top: 20px;
+		font-weight: bold;
+		font-style: italic;	
+	}
+	p.disc-text1{
+		font-size: 18px;
+		margin: 0 auto;
+		font-family: Lato;
+		margin-top: 15px;
+		font-weight: 100;
+	}	
+	p.disc-text9{
+		font-size: 18px;
+		margin: 0 auto;
+		font-family: Lato;
+		margin-top: 15px;
+		font-weight: 100;
+		font-style: italic;
+	}
+	h1{
+		font-size: 48px;
+		font-family: Code;
+		font-weight: bold;
+	}
+	
+/*******************
+Reversal Bottom-Header End
+******************************/
+
+
+/*******************
+Reversal Contact-Us Start
+******************************/
+	.section-contact-us{
+		padding-top: 70px;	
+		background: url(../assets/fuselab/cu_bg.png) no-repeat;	
+		background-position: right top;
+		background-color: #F9A719;
+	}
+
+	.section-contact-us .header-title h1{
+		color: #fff;
+	}
+	.section-contact-us .header-title .desc{
+		font-size: 21px;
+		color: #fff;
+	}
+	.section-contact-us .custom-contact{		
+		margin-bottom: 30px;
+	}	
+	.section-contact-us .frm-height{		
+		height: 50px;
+	}	
+	.form-control{
+		font-style: italic;
+		color: #555555;
+		box-shadow: 0px 10px 11px -6px rgba(34, 25, 25, 0.2) inset, 0 -1px #fff;
+		font-family: Lato;
+		font-size: 16px;
+	}
+	.section-contact-us {
+		padding-bottom: 150px;
+	}
+	.section-footer-copyright {
+		padding-top: 60px;
+	}
+/*******************
+Reversal Contact-Us End
+******************************/
+
+
+/*******************
+Reversal Blog-page Start
+******************************/
+	.blog-post .content-text h3 a {
+		color:#333333;
+	}
+	.section-blog-post{
+		padding-top: 100px;
+	}
+	.space-img{
+		padding-top: 60px;
+	}
+	iframe{
+		padding-top: 60px;		
+		width: 100%;
+		height: 422px;
+		border: 0px;
+	}
+	.space5{
+		height: 60px;
+	}
+	.blog-header{
+		padding-top: 100px;
+		text-align: center;
+		color: #fff;
+	}
+	p.blog-text1{
+		font-family: Lato;
+		font-size: 13px;
+		color: #fff;
+		font-style: normal;
+		line-height: 20px;
+	}
+	#carousel-example-blogsn .carousel-indicators {
+		display: none;
+	}	
+	#carousel-example-blogsn a.left {
+		background: url(../assets/images/arrow_left1.png) no-repeat;
+		width: 46px;
+		height: 46px;
+		top: 235px;
+	}	
+	#carousel-example-blogsn a:hover.left {
+		
+		width: 46px;
+		height: 46px;
+		top: 235px;
+	}
+	#carousel-example-blogsn a.right {
+		background: url(../assets/images/arrow_right1.png) no-repeat;
+		width: 46px;
+		height: 46px;
+		top: 235px;
+	}	
+	#carousel-example-blogsn a:hover.right {
+		
+		width: 46px;
+		height: 46px;
+		top: 235px;
+	}
+	.blog{
+		padding-bottom: 65px;
+	}
+	.space2{
+		height: 25px;
+	}
+	.blog-post img.post-img{
+		width: 100%;
+		height: 422px;
+	}
+	.blog-post-part .sitebar{
+		width: 8%;
+	}	
+	.blog-post .main-content{
+		width: 90%;
+	}	
+	.blog-post .content-text-custom{
+		text-align: left;
+		width: 100%;
+		padding-right: 0px;
+	}	
+	.blog-post .content-text h3{
+		margin-top: 0px;
+		margin-bottom: 25px;
+	}
+	.blog-post .sitebar img {
+		height: 68px;
+		width: 67px;
+	}
+	.read-more-btn{
+		width: 125px;
+		height: 40px;		
+		padding: 10px 10px 10px 10px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: Code;
+		font-weight: bold;		
+		font-size: 13px;
+		float: right;
+	}	
+	.read-more-btn a{
+		text-decoration: none;
+		color: #333333;
+	}
+	.blog-accordion h3{
+		font-family: Code;
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #333333;
+		font-weight: bold;
+		margin-top: 0px;
+	}
+	/*accordion*/
+	.panel-body{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#leftMenu .accordion-group {
+		margin-bottom: 0px;
+		border:0px;
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		padding-bottom: 10px;
+	} 
+	#leftMenu .accordion-heading {
+		height: 40px;		
+		background-color: #ededed; /* layer fill content */		
+		list-style-type:none;
+		border-radius: 5px;
+		padding-top: 11px;
+		padding-left: 20px;
+	} 
+	#leftMenu .accordion-heading  a{  
+		color: #353943; /* text color */		
+		text-decoration:none;
+		font-weight:bold;  
+		font-family: Lato;
+		font-style: normal;
+		font-size:16px;
+	}
+	#leftMenu .accordion-heading  a:hover{  
+		color: #353943; /* text color */	
+	}
+	#leftMenu .accordion-heading .active {
+		width: 182px;
+		height: 34px;
+		border: 1px solid #5b5b5b; /* inner stroke */
+		background-color: #353535; /* layer fill content */
+		background-image: -moz-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+		background-image: -o-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+		background-image: -webkit-linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+		background-image: linear-gradient(90deg, #4b4b4b 0%, #555 100%); /* gradient overlay */
+	}
+	.accordion-btn{
+		background-color: #ffcc33;
+		padding: 11px 10px 11px 10px;
+		border-radius: 5px;
+		float: right;
+		color: #fff;
+		font-family: Lato;
+		font-size: 18px;
+		position: relative;
+		top: -11px;
+	}
+	.accordion-inner ul li{
+		font-family: Lato;
+		font-size: 16px;
+		color: #353943;
+		padding-bottom: 7px;
+	}	
+	.accordion-inner ul{
+		padding-bottom: 0px;
+		margin-top: 10px;
+		background-color: #ededed;
+	}
+	.accordion-sitebar{
+		font-family: Lato;
+		font-size: 18px;
+		color: #fff;
+		padding: 12px 12px 9px 12px;		
+		border-radius: 5px;
+		position: relative;
+		right: -77px;
+	}	
+	.accordion-sitebar:hover{
+		font-family: Lato;
+		font-size: 18px;
+		color: #fff;
+		padding: 12px 12px 9px 12px;		
+		border-radius: 5px;
+		position: relative;
+		right: -77px;
+	}	
+	.accordion-sitebar2{
+		font-family: Lato;
+		font-size: 18px;
+		color: #fff;
+		padding: 12px 12px 9px 12px;		
+		border-radius: 5px;
+		position: relative;
+		right: -128px;
+	}	
+	.accordion-sitebar3{
+		font-family: Lato;
+		font-size: 18px;
+		color: #fff;
+		padding: 12px 12px 9px 12px;	
+		border-radius: 5px;
+		position: relative;
+		right: -83px;
+	}	
+	.accordion-sitebar4{
+		font-family: Lato;
+		font-size: 18px;
+		color: #fff;
+		padding: 12px 12px 9px 12px;		
+		border-radius: 5px;
+		position: relative;
+		right: -116px;
+	}
+	/*accordion*/
+	
+	/*recent-project*/
+	
+	.blog-project h3{
+		font-family: Code;
+		font-size: 18px;
+		text-transform: uppercase;		
+		font-weight: bold;
+		margin-top: 0px;
+	}	
+	.blg-accordion h3{
+		font-family: Code;
+		font-size: 18px;
+		text-transform: uppercase;		
+		font-weight: bold;
+		margin-top: 0px;
+	}
+	.panel-title a{
+		text-decoration: none;
+		font-family: Lato;
+		font-size: 16px;
+		color: #353943;
+	}
+	ul.cart_lavel li{
+		font-family: Lato;
+		font-size: 16px;
+		color: #353943;
+		line-height: 22px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		cursor: pointer;
+		padding-left: 30px;
+	}	
+	ul.cart_lavel li:hover{
+		font-family: Lato;
+		font-size: 16px;
+		color: #fff;
+		line-height: 22px;		
+		padding-top: 5px;
+		padding-bottom: 5px;
+		cursor: pointer;
+		padding-left: 30px;
+	}	
+	ul.cart_lavel{
+		width: 100%;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.panel-default > .panel-heading + .panel-collapse .panel-body {
+		border-top-color: #dddddd;
+		background-color: #ededed;
+		margin-top: 5px;
+	}
+	.panel-default > .panel-heading {
+		color: #333333;
+		background-color: #ededed;
+		border-color: #dddddd;
+	}	
+	.panel-default > .panel-heading:hover {
+		color: #fff;		
+		border-color: #dddddd;
+	}	
+	.panel-default > .panel-heading:hover a.panel-heading{
+		color: #fff;		
+	}	
+	.panel-default > .panel-heading:hover .accordion-sitebar {
+		background-color: #353943;	
+	}
+	.panel-default > .panel-heading:hover .accordion-sitebar2 {
+		background-color: #353943;	
+	}
+	.panel-default > .panel-heading:hover .accordion-sitebar3 {
+		background-color: #353943;	
+	}	
+	.panel-default > .panel-heading:hover .accordion-sitebar4 {
+		background-color: #353943;	
+	}	
+	
+	
+	/* Recent Project start*/
+	.blog-project-main{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.blog-project img{
+		width:100%;
+		height: 172px;
+	}
+	.space4{
+		height:100px;
+	}
+	.blog-project-image{
+		padding-bottom: 30px;
+	}
+	.projectinfo2 {
+		position: absolute;
+		width: 100%;
+		height: 85.6%;
+		top: 0%;
+		left: 0px;
+		z-index: 100;
+		text-align: center;
+		color: #fff;
+		padding-top: 10px;
+		opacity: 0;
+	}	
+	.projectinfo2 .glyph {
+		float: left;
+		text-align: center;
+		padding: .75em;
+		margin: .4em 1.5em .75em 0;
+		width: 100%;
+		text-shadow: none;
+		color: white;
+	}	
+	.projectinfo2 .glyph div {
+		padding-top: 10px;
+		padding-bottom: 0px;
+	}	
+	.projectinfo2 h3 {
+		color: #fff!important;
+	}
+	.blog-project-image:hover .projectinfo2 {
+		display: block;		
+		opacity: 0.8;
+		-webkit-transition: background .33s linear;
+		-moz-transition: background .15s linear;
+		-o-transition: background .15s linear;
+		transition: background .15s linear;
+		cursor: pointer;
+	}
+	/*Recent project end*/
+	
+	/*Recent Tweet start*/
+	.tweet-first{
+		font-family: Lato;		
+		font-size: 13px;
+	}	
+	.tweet-second{
+		font-family: Lato;		
+		font-size: 13px;
+	}	
+	.tweet-third{
+		font-family: Lato;		
+		font-size: 13px;
+	}
+	.tweet{
+		padding-bottom: 7px;
+	}
+	.recent-tweet{
+		padding-bottom: 30px;
+	}	
+	/*Recent Tweet end*/
+	
+	
+	/*pagination start*/ 
+	.blog_pagination_left{
+		float: left;
+		width:70%;
+		
+		
+	}	
+	.blog_pagination_right {
+		
+	}
+	.blog_pagination{
+		margin-top: 60px;
+		padding-bottom: 100px;		
+	}
+	.blog_pagination_left_no{
+		padding: 10px 15px 10px 15px;
+		border: 1px solid #353943;
+		margin-right: 10px;
+		font-family: Lato;
+		font-size: 16px;
+		font-weight: bold;
+		color: #353943;
+	}
+	.blog_pagination a {
+		text-decoration: none;
+	}
+	.blog_pagination a:hover .blog_pagination_left_no { 
+		border: 1px solid transparent;		
+	}
+	.active-page{
+		border: 1px solid transparent;		
+	}
+	.blog_pagination_right .glyph {
+		float: none;
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+		width: auto;
+		text-shadow: none;
+	}	
+	.active-right{
+		border: 1px solid transparent!important;		
+	}
+	.blog_pagination_right .glyph .fs1 {
+		font-size: 30px;
+		color: #353943;
+		padding: 2px 3px 0px 3px;
+		border: 1px solid #353943;
+		margin-right: 10px;
+	}	
+	.blog_pagination_right .glyph .fs1:hover {
+		font-size: 30px;
+		color: #353943;
+		padding: 2px 3px 0px 3px;
+		border: 1px solid transparent;		
+		margin-right: 10px;
+	}
+	/*pagination end*/
+	
+/*******************
+Reversal Blog-page End
+******************************/
+
+
+
+/*******************
+Reversal Blog-Detail-page Start
+******************************/
+	.blog-post .details{
+		width: 100%;
+		float: none;
+	}
+	p.text7{
+		color: #353943;
+		font-size: 13px;
+		font-family: Lato;
+		line-height: 20px;
+		font-weight: normal;
+		font-style: italic;
+	}	
+	p.text8{
+		color: #353943;
+		font-size: 13px;
+		font-family: Lato;
+		line-height: 20px;
+		font-weight: bold;		
+	}
+	.detail-author{
+		margin-right: 20px;
+	}
+	.admin_left{
+		float: left;
+		width: 160px;
+	}
+	.admin_left img{
+		width: 125px;
+		height: 125px;
+		border: 2px solid white;
+	}
+	.admin_right{
+		width: 812px;
+		padding-bottom: 8px;
+	}
+	.admin_right h3{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		color: #333333;
+		margin-top: 0px;
+	}	
+	.blog-detail-text h3{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;		
+	}
+	.detail-author-content{
+		color: #939598;
+		font-size: 13px;
+		font-family: Lato;		
+		line-height: 20px;
+		font-weight: normal;
+	}
+	.blog-detail-text{
+		padding-bottom: 75px;
+	}
+	.admin_part{
+		background-color: #ededed;
+		padding: 35px;
+		margin-bottom: 90px;
+	}
+	.comment_left{
+		float: left;
+		width: 120px;
+	}
+	.comment_left img{
+		height: 100px;
+		width: 100px;
+	}
+	.comment_part{
+		padding-bottom: 60px;
+	}
+	.reply{
+		padding-left: 120px;
+	}
+	.comment_part h3{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		color: #333333;
+	}
+	.comment_info1{
+		font-family: Lato;
+		font-weight: bold;
+		font-size: 14px;		
+	}	
+	.comment_info2{
+		font-family: Lato;
+		font-weight: bold;
+		font-size: 14px;
+		color: #939598;
+	}
+	.space3{
+		height:15px;
+	}
+	.section-contact-us h3{
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		color: #333333;
+		margin-bottom: 65px;
+	}
+	.pad-bot{
+		padding-bottom: 130px;
+	}
+	.clear100{
+		clear:both;
+	}
+/*******************
+Reversal Blog-Detail-page End
+******************************/
+	
+
+/*******************
+Reversal Copyright Start
+******************************/
+	.section-footer-copyright{		
+		height: 200px;		
+		padding-bottom: 60px;
+	}
+	.section-footer-copyright .footer_logo{
+		text-align: center;		
+		margin-bottom: 20px;
+	}
+	.section-footer-copyright .copyright-text{
+		text-align: center;		
+	}
+	.btn-primary {
+		color: #ffffff;		
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+		color: #ffffff;		
+		font-family: Code;
+		font-weight: bold;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+	.color-gray{
+		color: #333333;
+		font-size: 13px;
+		font-family: Lato;
+		font-weight: normal;
+	}
+	.color-red{
+		color: #333333;
+		font-size: 13px;
+		font-family: Lato;
+		font-weight: bold;
+	}
+
+	.color-fuselab {
+		color: #F9A719;
+		font-size: 13px;
+		font-family: Lato;
+		font-weight: normal;
+	}
+	
+	.projectinfo1{		
+		height: 77.7%;		
+	}
+/*******************
+Reversal Copyright End
+******************************/
+
+/* Img HTML start*/	
+	.logo_main{		
+		height: 53px;
+		width: 130px;
+		margin-top: 15px;
+	}
+	.logo_3{		
+		height: 75px;
+		width: 210px;
+		margin: 0 auto;
+	}		
+	.title_rs{		
+		height: 50px;
+		width: 590px;
+		margin: 0 auto;
+	}	
+	.get_started{		
+		height: 124px;
+		width: 124px;
+		margin: 0 auto;
+	}
+	.slide3_en{		
+		padding: 15px 32px;		
+		font-family: Lato;
+		font-size: 24px;
+	}
+
+/* Img HTML end*/
+	
+.slider-main-home {
+background-color: transparent;
+}
+.single_img{
+	width: 100%;
+}
+
+
+
+
+/* Load more*/
+
+#myList li{ display:none;
+}
+#loadMore {
+  
+    cursor:pointer;
+}
+#loadMore:hover {
+   
+}
+#showLess {
+   
+    cursor:pointer;
+    display:none;
+}
+#showLess:hover {
+   
+}
+
+/* Load more*/
+.single-pie1 h4{		
+		margin-top: -15px!important;		
+	}
+.pie1 {		
+		margin-top: 0px!important;		
+	}
+	
+	
+/* responsive css  */
+.section-more-feathurs {
+padding-top: 150px;
+padding-bottom: 160px;
+margin-top: 0px;
+}
+.custom-con-color {
+background-color: white;
+position: relative;
+}
+.section-price-table {
+background-color: #f4f4f4;
+position: relative;
+}
+.section-footer-copyright {
+position: relative;
+}
+
+
+
+
+
+
+/* loader css*/
+#preloader {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ffffff;
+z-index: 99999;
+}
+
+#status {
+width: 200px;
+height: 200px;
+position: absolute;
+left: 50%;
+top: 50%;
+background-image: url(../assets/images/status.gif);
+background-repeat: no-repeat;
+background-position: center;
+margin: -80px 0 0 -100px;
+}
+/* loader css end*/
+
+
+/* single-img-style */
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+@media screen and (max-width: 1140px) { 
+	.cb-slideshow li div h3 { font-size: 100px }
+}
+@media screen and (max-width: 600px) { 
+	.cb-slideshow li div h3 { font-size: 50px }
+}
+
+header {
+	position: absolute;
+	top: 70%;
+	left: 20%;
+	z-index: 999;
+	color: #F9A719;
+	padding: 60px;
+	margin: -200px 0 0 -200px;
+	text-align: left;
+}
+
+header h1 {
+    padding: 0 0 10px 0;
+    font-size: 60px;
+	font-family: 'NanumGothic';
+	font-weight: 300;
+}
+
+header h1 span {
+    
+	font-size: 30px;
+	font-style: italic;
+	font-family: Lato;
+	text-transform: capitalize;	
+	border-radius: 5px;
+	padding: 0px 5px 3px 5px;
+	border: 1px solid #fff;
+}
+header h1 span a {    
+	color: #fff;
+}
+header h1 span a:hover {    
+	color: #fff;
+}
+header h4 {
+    font-weight: 300;		
+	font-family: Code;
+	text-transform: capitalize;
+	font-size: 24px;
+	padding-top: 15px;
+}
+
+header p {
+    font-family: Lato;
+	line-height: 18px;
+}
+
+
+p{
+ text-align:left;
+} 
+
